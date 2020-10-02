@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "fx/version"
+require "fx/oracle_adapter/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "fx-oracle-adapter"
@@ -28,12 +28,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "activerecord-oracle_enhanced-adapter", "~> 6.0.0"
   spec.add_development_dependency "ruby-oci8", "~> 2.2.8"
   spec.add_development_dependency "pry"
-  spec.add_development_dependency "ammeter", '>= 1.1.3'
-  spec.add_development_dependency "yard"
-  spec.add_development_dependency "redcarpet"
 
-  spec.add_dependency "activerecord", '>= 4.0.0'
-  spec.add_dependency "railties", '>= 4.0.0'
+  spec.add_dependency "activerecord", '>= 6.0.0'
+  spec.add_dependency "railties", '>= 6.0.0'
 
   spec.required_ruby_version = "~> 2.7"
 end

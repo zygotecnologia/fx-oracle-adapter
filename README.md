@@ -2,6 +2,12 @@
 
 An Oracle adapter for (fx)[https://github.com/teoljungberg/fx] gem
 
+## Features
+
+This adapter makes possible to use oracle database functions with active record migrations and schema dump for those functions.
+
+It is not possible for now to use this adapter for oracle database triggers.
+
 ## Installation
 
 Add this line to gemfile
@@ -33,4 +39,8 @@ This project is intended to be a safe, welcoming space for collaboration, and co
 
 The gem is available as open source under the terms of the (MIT License)[https://opensource.org/licenses/MIT].
 
+## TODO:
+
+- [] Adds tests using dummy application
+- [] Adds Oracle trigger compatibility
 
