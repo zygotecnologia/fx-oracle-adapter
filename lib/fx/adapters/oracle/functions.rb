@@ -40,7 +40,7 @@ module Fx
         attr_reader :connection
 
         def functions_from_oracle
-          connection.execute(FUNCTIONS_WITH_DEFINITIONS_QUERY)
+          connection.exec_query(FUNCTIONS_WITH_DEFINITIONS_QUERY)
         end
 
         def to_fx_function(result)
