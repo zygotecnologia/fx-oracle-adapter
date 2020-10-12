@@ -14,7 +14,7 @@ module Fx
             CONCAT('CREATE OR REPLACE ', LISTAGG(user_source.text, ' ') WITHIN GROUP (ORDER BY user_source.line)) AS definition
           FROM user_source
           WHERE user_source.type = 'FUNCTION'
-          GROUP BY user_source.name;
+          GROUP BY user_source.name
         EOS
 
         # Wraps #all as a static facade.
