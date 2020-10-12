@@ -54,7 +54,7 @@ module Fx
       #
       # @return [void]
       def create_function(sql_definition)
-        execute sql_definition
+        exec_query sql_definition
       end
 
       # Creates a trigger in the database.
@@ -66,7 +66,7 @@ module Fx
       #
       # @return [void]
       def create_trigger(sql_definition)
-        execute sql_definition
+        exec_query sql_definition
       end
 
       # Updates a function in the database.
@@ -110,7 +110,7 @@ module Fx
       #
       # @return [void]
       def drop_function(name)
-        execute "DROP FUNCTION #{name};"
+        exec_query "DROP FUNCTION #{name};"
       end
 
       # Drops the trigger from the database
@@ -123,14 +123,14 @@ module Fx
       #
       # @return [void]
       def drop_trigger(name, on:)
-        execute "DROP TRIGGER #{name} ON #{on};"
+        exec_query "DROP TRIGGER #{name} ON #{on};"
       end
 
       private
 
       attr_reader :connectable
 
-      delegate :execute, to: :connection
+      delegate :exec_query, to: :connection
 
       def connection
         Connection.new(connectable.connection)
