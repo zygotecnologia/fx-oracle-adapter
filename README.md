@@ -1,6 +1,6 @@
 # F(x) Oracle Adapter
 
-An Oracle adapter for (fx)[https://github.com/teoljungberg/fx] gem
+An Oracle adapter for [fx](https://github.com/teoljungberg/fx) gem
 
 ## Features
 
@@ -41,6 +41,6 @@ The gem is available as open source under the terms of the (MIT License)[https:/
 
 ## TODO:
 
-- [] Adds tests using dummy application
-- [] Adds Oracle trigger compatibility
+- [ ] Adds tests using dummy application
+- [ ] Adds Oracle trigger compatibility
 
